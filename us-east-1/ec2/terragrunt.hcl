@@ -2,12 +2,12 @@ include {
   path = find_in_parent_folders()
 }
 
-dependency "vpc" {
-  config_path = "../vpc"
-}
-
 terraform {
   source = "../../modules/ec2"
+}
+
+dependency "vpc" {
+  config_path = "../vpc"
 }
 
 inputs = {

@@ -1,3 +1,8 @@
+variable "aws_region" {
+  description = "The AWS region to deploy to (e.g. us-east-1)"
+  type        = string
+}
+
 variable "name" {
   description = "The friendly name"
   type        = string
@@ -21,4 +26,8 @@ variable "ingress_cidr" {
 variable "ports" {
   description = "The address of  the vpc cidr"
   type        = map(string)
+  default     = {
+				ssh = "22"
+				rdp = "3389",
+			}
 }
