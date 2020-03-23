@@ -10,6 +10,10 @@ terraform*
 # Terragrunt
 *.terragrunt-cache
 
+# Go
+*go.mod
+*go.sum
+
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
